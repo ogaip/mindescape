@@ -5,9 +5,8 @@ from django.shortcuts import render
 
 def index(request):
     titulo = "M1ND 3$C4P3"
-    return render(request, "web/index.html", {"title": titulo})
+    return render(request, "web/medialab/index.html")
 
-
-def index2(request):
-    titulo = "M1ND 3$C4P3"
-    return render(request, "web/index2.html", {"title": titulo})
+def nosotros(request):
+    print(request.user)
+    return render(request, "web/medialab/index.html")
